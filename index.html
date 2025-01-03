@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+ </head>
+  <!--  start the nav bar  section -->
+
+  
+  <style>
+
+     body{
+            position: relative;        
+    }
+
+    @media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
+
+    </style>
+
+    <div class="ezy__nav1 light ">
+	<nav class="navbar navbar-expand-lg navbar-light py-3">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				 E-learing.com
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+				aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span>
+					<span></span>
+				</span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-4 mt-lg-0">
+					<li class="nav-item"><a class="nav-link active fs-4 text-capitalize fw-bolder" href="#home">Home</a></li>
+					<li class="nav-item"><a class="nav-link fs-4 text-capitalize fw-bolder" href="#why">why us</a></li>
+					<li class="nav-item"><a class="nav-link fs-4 text-capitalize fw-bolder" href="#course"> Course</a></li>
+					<li class="nav-item"><a class="nav-link fs-4 text-capitalize fw-bolder" href="#Team">Team</a></li>
+					<li class="nav-item"><a class="nav-link fs-4 text-capitalize fw-bolder" href="#clients">clients</a></li>
+					<li class="nav-item"><a class="nav-link fs-4 text-capitalize fw-bolder" href="#blog"> blog</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<style>
+.ezy__nav1 {
+	/* Bootstrap variables */
+	--bs-body-color: #000;
+	--bs-body-bg: rgb(255, 255, 255);
+
+	/* Easy Frontend variables */
+	--ezy-theme-color: rgb(13, 110, 253);
+	--ezy-theme-color-rgb: 13, 110, 253;
+
+	background-color: var(--bs-body-bg);
+}
+
+
+/* Gray Block Style */
+.gray .ezy__nav1,
+.ezy__nav1.gray {
+	/* Bootstrap variables */
+	--bs-body-bg: rgb(246, 246, 246);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__nav1,
+.ezy__nav1.dark-gray {
+	/* Bootstrap variables */
+	--bs-body-color: #ffffff;
+	--bs-body-bg: rgb(30, 39, 53);
+}
+
+/* Dark Block Style */
+.dark .ezy__nav1,
+.ezy__nav1.dark {
+	/* Bootstrap variables */
+	--bs-body-color: #ffffff;
+	--bs-body-bg: rgb(11, 23, 39);
+
+}
+
+.ezy__nav1 .navbar-brand {
+	font-weight: 800;
+	font-size: 30px;
+	color: var(--bs-body-color);
+}
+
+.ezy__nav1 .navbar-toggler {
+	border: none;
+	box-shadow: none !important;
+}
+
+.ezy__nav1 .navbar-toggler>span {
+	display: flex;
+	align-items: center;
+	height: 32px;
+}
+
+.ezy__nav1 .navbar-toggler>span>span {
+	position: relative;
+}
+
+.ezy__nav1 .navbar-toggler>span>span,
+.ezy__nav1 .navbar-toggler>span>span::before,
+.ezy__nav1 .navbar-toggler>span>span::after {
+	height: 2px;
+	background-color: var(--bs-body-color);
+	width: 25px;
+	display: inline-block;
+	border-radius: 5px;
+	transition: all .35s ease-in-out;
+}
+
+.ezy__nav1 .navbar-toggler>span>span::before,
+.ezy__nav1 .navbar-toggler>span>span::after {
+	content: '';
+	position: absolute;
+	left: 0;
+}
+
+.ezy__nav1 .navbar-toggler[aria-expanded="false"]>span>span::before {
+	top: 7px;
+}
+
+.ezy__nav1 .navbar-toggler[aria-expanded="false"]>span>span::after {
+	bottom: 7px;
+}
+
+.ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span {
+	background-color: transparent;
+}
+
+.ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span::before {
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+.ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span::after {
+	bottom: 0;
+	transform: rotate(45deg);
+}
+
+.ezy__nav1 .navbar-nav .nav-link {
+	color: var(--bs-body-color);
+	opacity: .6;
+}
+
+.ezy__nav1 .navbar-nav .nav-link:hover,
+.ezy__nav1 .navbar-nav .nav-link:focus,
+.ezy__nav1 .navbar-nav .nav-link.active {
+	color: var(--bs-body-color);
+	opacity: 1;
+}
+
+@media (min-width: 992px) {
+	.ezy__nav1 .navbar-nav .nav-link {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+}
+
+
+
+
+</style>
+  
+
+         <!--  and the nav bor stcton -->
+ 
+<!-- teb id-1 -->
+
+
+         <!--  and the nav bor stcton -->
+ 
+<!-- teb id-1 -->
+
+<!-- start the header setion -->
+
+<div id="home">
+    <header>
+        <div class="container-fluid lg-h-100 lx-h-100 ">
+            <div class="row  d-flex align-items-center flex-wrap">
+               <div class="col-lg-6 ">
+                   <h3 class=" display-5 mt-2 mb-0 fw-bolder ms-5  text-capitalize lead text-white fast-heading animate__animated animate__backInDown ">E-learing </h3>
+                   <h1 class=" display-2 fw-bolder mt-4 ms-5 lead text-white second-heading text-capitalize animate__animated animate__backInLeft"> Best Platform for Personal and Online Private Tutor</h1>
+                     <p class="   ms-5   text-lowercase text-capitalize lead text-white pargraph animate__animated animate__backInRight"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloremque tempora harum sit totam. Nisi est tenetur architecto earum unde laborum vero, cum sunt ullam exercitationem. </p>
+                   
+                   
+                      <div class=" mt-xs-5  animate__animated animate__backInUp"><button type="button" class=" mb-md-4  ms-5 border rounded-top rounded-bottom fw-bolder fs-5 text-capitalize">read more</button>
+                      
+                    
+                      </div>
+                   
+                  
+
+               </div>
+               <div class="col-lg-6  text-center animate__animated animate__backInRightc"><img class="img-fluid mt-xs-4" src="https://www.thinkerstation.com/wp-content/uploads/2022/05/Screenshot_2022-05-20_172747-removebg-preview.png" height="900px" width="100%" alt=""></div>
+               </div>
+            </div>
+        </div>
+       
+   </header>
+
+
+</div>
+
+
+<!--  and the header section -->
+
+
+
+<!-- start the  why sectino -inforematoi  -->
+
+<section class="section1 lg-h-50 lx-h-100">
+    <div class="container lg-h-100 mt-5">
+        <div class="row justify-content-between d-flex align-items-center ">
+            <div class="col-lg-6"> <img  class="rounded-4  mt-3 mb-3" src="https://plus.unsplash.com/premium_photo-1664300813371-7e2e101f6f85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b25saW5lJTIwbGVhcm5pbmd8ZW58MHx8MHx8fDA%3D" height="300px" width="100%" alt=""></div>
+            <div class="col-lg-6 mt-5"> <h3 class="fw-bolder  text-center  section1 text-capitalize ">Achiev  your goals with Edujob</h3>
+           <p class="  mt-5 lead text-center p text-capitalizes">  Lorem ipsum, eiciendis quae alias explicabo pariatur est doloribus qui adipisci <br> exercitationem, placeat quo quos incidunt? Quam deleniti quas odit  <br> sapiente officiis laudantium! Inventore accusamus non in enim  <br> harum magnam obcaecati molestias officiis commodi <br> nisi laudantium neque tempora, pariatur, quis <br> quod soluta </p>
+           
+           
+        
+            </div>
+  </section>
+
+
+<!-- and the information section  -->
+  
+
+
+<!-- start the why section -->
+<div id="why">
+    <section class="mt-4">
+        <div class="container-fluid lg-h-100 section2 lg-h-50 lx-h-75">
+             <div class="  text-center d-flex justify-content-center  text-capitalize  why-heading"> <h2 class="mt-4 display-4  text-capitalize fw-bolder"> <b> Why Choses Us </b></h2> </div>
+            <div class="row  mt-5 d-flex align-items-center justify-content-between">
+                <div class="col-lg-4"><svg xmlns="http://www.w3.org/2000/svg"  height="100px"width="100%" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill=" #16423C" d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg> <h3 class=" text-center h3 mt-5 mb-5 text-capitalize"> <b> Highly Expeienced </b> </h3></div>
+                <div class="col-lg-4"><svg xmlns="http://www.w3.org/2000/svg" height="100px" width="100%" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill=" #16423C" d="M256 48C141.1 48 48 141.1 48 256l0 40c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-40C0 114.6 114.6 0 256 0S512 114.6 512 256l0 144.1c0 48.6-39.4 88-88.1 88L313.6 488c-8.3 14.3-23.8 24-41.6 24l-32 0c-26.5 0-48-21.5-48-48s21.5-48 48-48l32 0c17.8 0 33.3 9.7 41.6 24l110.4 .1c22.1 0 40-17.9 40-40L464 256c0-114.9-93.1-208-208-208zM144 208l16 0c17.7 0 32 14.3 32 32l0 112c0 17.7-14.3 32-32 32l-16 0c-35.3 0-64-28.7-64-64l0-48c0-35.3 28.7-64 64-64zm224 0c35.3 0 64 28.7 64 64l0 48c0 35.3-28.7 64-64 64l-16 0c-17.7 0-32-14.3-32-32l0-112c0-17.7 14.3-32 32-32l16 0z"/></svg> <h3 class=" text-capitalize text-center  mt-5 mb-5 section2"> <b> Dedicated Support </b> </h3> </div>
+                <div class="col-lg-4"><svg xmlns="http://www.w3.org/2000/svg"  height="100px" width="100%" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill=" #16423C" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><h3  class="h3 text-capitalize text-center mb-5  mt-5">  <b> Queston  Quiz & Course </b> </h3></div>
+
+            </div> 
+        </div>
+      </section>
+
+</div>
+
+
+
+
+
+  <!-- the ant hte why sectoin -->
+
+
+
+
+  <!-- start the course section -->
+<div id="course">
+  
+    <div class=" mt-5 mb-4 container">
+        <h3 class=" display-4 text-center  text-capitalize fw-bolder  heading-course "> <b>populer Course </b></h3>
+          <div class="row   justify-content-between d-flex align-items-center">
+          
+                  <div class=" col-lg-4 mt-5 ">
+                      <div class="product-card img-fluid">
+                          <div class="product-card__image">
+                              <img class="img-fluid" src="https://media.istockphoto.com/id/1363276509/photo/teacher-giving-computer-science-lecture-to-diverse-multiethnic-group-of-female-and-male.jpg?s=2048x2048&w=is&k=20&c=v4fS7CQWx6h4samL01XrXGnf4baEXNM0HoCulimjnyw=" alt="Red Nike Shoes">
+                          </div>
+                          <div class="product-card__info">
+                              <h2 class="product-card__title text-capitalize">web desginer</h2>
+                              <p class="product-card__description text-capitalize">html ,css ,java script </p>
+                              <div class="product-card__price-row">
+                                  <span class="product-card__price  "><button type="button" class=" border border-2 rounded-bottom rounded-top">$149.99 </button></span>
+                                  <button class="product-card__btn text-capitalize border border-2">Add to Cart</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class=" col-lg-4 mt-5 ">
+                      <div class="product-card img-fluid">
+                          <div class="product-card__image">
+                              <img class="img-fluid" src="https://media.istockphoto.com/id/1399018993/photo/leader-give-a-business-presentation-at-an-office-conference-meeting-businessman-coach-mentor.jpg?s=612x612&w=0&k=20&c=OtdQSy4XdtSZoQZBYz5QQ69YWSMAhMAJuLcfE7QS2zM=" alt="Red Nike Shoes">
+                          </div>
+                          <div class="product-card__info">
+                              <h2 class="product-card__title text-capitalize">UI/UX DGINGER</h2>
+                              <p class="product-card__description text-capitalize">FIGEMA</p>
+                              <div class="product-card__price-row">
+                                <span class="product-card__price"><button type="button" class="border border-2 rounded-bottom rounded-top">$149.99 </button></span>
+                                  <button class="product-card__btn text-capitalize border border-2">Add to Cart</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 mt-5 ">
+                      <div class="product-card img-fluid">
+                          <div class="product-card__image">
+                              <img class="img-fluid" src="https://media.istockphoto.com/id/1360521208/photo/businessman-using-a-computer-for-analysis-seo-search-engine-optimization-marketing-ranking.jpg?s=612x612&w=0&k=20&c=UWrxVhwaaUYb7A-3BQHZTJTO7KM7cQYSC6yfcEbkhlk=" alt="Red Nike Shoes">
+                          </div>
+                          <div class="product-card__info">
+                              <h2 class="product-card__title text-capitalize">digital Marketing</h2>
+                              <p class="product-card__description text-capitalize">local / global </p>
+                              <div class="product-card__price-row">
+                                <span class="product-card__price " ><button type="button" class="border border-2 rounded-bottom rounded-top">$149.99 </button></span>
+                                  <button class="product-card__btn text-capitalize border border-2">Add to Cart</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+
+                  <div class=" col-lg-4 mt-5 ">
+                      <div class="product-card img-fluid">
+                          <div class="product-card__image">
+                              <img  class="img-fluid" src="https://media.istockphoto.com/id/1488294044/photo/businessman-works-on-laptop-showing-business-analytics-dashboard-with-charts-metrics-and-kpi.jpg?s=612x612&w=0&k=20&c=AcxzQAe1LY4lGp0C6EQ6reI7ZkFC2ftS09yw_3BVkpk=" alt="Red Nike Shoes">
+                          </div>
+                          <div class="product-card__info">
+                              <h2 class="product-card__title text-capitalize">web desginer</h2>
+                              <p class="product-card__description text-capitalize">html,css java script</p>
+                              <div class="product-card__price-row">
+                                <span class="product-card__price"><button type="button" class=" border border-2 rounded-bottom rounded-top">$149.99 </button></span>
+                                  <button class="product-card__btn text-capitalize border border-2">Add to Cart</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                
+
+
+
+
+                  <div class=" col-lg-4 mt-5 ">
+                      <div class="product-card img-fluid">
+                          <div class="product-card__image">
+                              <img class="img-fluid" src="https://media.istockphoto.com/id/1265038430/photo/website-designer-creative-planning-phone-app-development-template-layout-framework-wireframe.jpg?s=612x612&w=0&k=20&c=sgKiBYMwfcdw7W4q4lLxwqpm4PovVLZ9CE7wCLbBWHk=" alt="Red Nike Shoes">
+                          </div>
+                          <div class="product-card__info">
+                              <h2 class="product-card__title text-capitalize">UI/UX DGINGER</h2>
+                              <p class="product-card__description text-capitalize">FIGEMA.</p>
+                              <div class="product-card__price-row">
+                                <span class="product-card__price"><button type="button" class="border border-2 rounded-bottom rounded-top">$149.99 </button></span>
+                                  <button class="product-card__btn text-capitalize border border-2">Add to Cart</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                
+
+
+
+                  <div class=" col-lg-4 mt-5">
+                      <div class="product-card img-fluid">
+                          <div class="product-card__image">
+                              <img  class="img-fluid" src="https://media.istockphoto.com/id/846843116/photo/female-ux-architect-has-discussion-with-male-design-engineer-they-work-on-mobile-application.jpg?s=612x612&w=0&k=20&c=bmKuOSVmGa4WIkHDFWSnbpgrg5EhX2t4GxT-Vk6t1U8=" alt="Red Nike Shoes">
+                          </div>
+                          <div class="product-card__info">
+                              <h2 class="product-card__title text-capitalize">digital Marketing</h2>
+                              <p class="product-card__description text-capitalize"> loacal  and global</p>
+                              <div class="product-card__price-row">
+                                <span class="product-card__price"><button type="button" class="border border-2 rounded-bottom rounded-top">$149.99 </button></span>
+                                  <button class="product-card__btn text-capitalize border border-2">Add to Cart</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                
+                
+</div>
+</div>
+
+</div>
+
+
+
+<!-- and teh  coures secton  -->
+
+
+
+
+ <!-- the start  the contect section -->
+
+<div id="contact">
+    <section class="from-section mt-5 mb-5">
+        <h3 class=" display-3 text-center  fw-bolder mt-5 heding3 text-capitalize "><b > Contect </b> </h3>
+      <div class="container lg-h-100-lx-h-100 mt-5 ">
+          <div class="row d-flex align-items-start">
+              <div class="col-lg-6 "><h3 class=" mt-5 ms-5 h3 display-4 fw-bolder text-white">Education Job</h3>
+                <h3  class=" mt-3 ms-5 h3 display-4 fw-bloder text-white"> <b>REGISTER NOW </b></h3>
+              
+            
+               <p class=" text-white lead ms-5 mt-2 "> <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempore, quasi quam minus itaque voluptatum perferendis doloribus excepturi veniam asperiores rerum. Animi accusamus sequi dolores quas iure corrupti! Ipsum, ut. </b></p>
+               <div class="d-flex justify-content-start mt-3 ">
+
+                
+                </div>
+              </div>
+          
+
+                  <div class="col-lg-6 mt-5 ms-auto mb-5 py-5 p-3">
+                      <div  class="row justify-content-center">
+                
+                        <div class="wrapper border border-5  ">
+                          <form action="#">
+                            <h2 class="h2">Login</h2>
+                              <div class="input-field">
+                              <input type="text" required>
+                              <label>Enter your email</label>
+                            </div>
+                            <div class="input-field">
+                              <input type="password" required>
+                              <label>Enter your password</label>
+                            </div>
+                            <div class="forget">
+                              <label for="remember">
+                                <input type="checkbox" id="remember">
+                                <p>Remember me</p>
+                              </label>
+                              <a href="#">Forgot password?</a>
+                            </div>
+                            <button type="submit">Log In</button>
+                            <div class="register">
+                              <p>Don't have an account? <a href="#">Register</a></p>
+                            </div>
+                          </form>
+                          
+                        </div>
+                      
+                  </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+  
+</div>
+
+
+
+
+<style>
+  
+
+  header{
+    background-color: #16423C ;
+   }
+
+   .fast-heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+
+   .second-headin{
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+   .pargraph{
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+   .play-button :hover{
+    background-color:#16423C ;
+   }
+
+   
+
+
+
+
+
+
+   .why-heading{
+    font-family: Arial, Helvetica, sans-serif ;
+    
+   }
+
+
+
+   .heading-course{
+    font-family: Arial, Helvetica, sans-serif ;
+     color: #16423C;
+   }
+
+   
+   .section1{
+    font-family: 'Times New Roman', serif;
+    color:#16423C;
+
+
+   }
+
+.team-heading{
+  font-family: Arial, Helvetica, sans-serif ;
+  color: #16423C;
+}
+
+
+  .section2{
+    background-color: #E9EFEC;
+    color :  #16423C;
+ }
+
+ .section2{font-family: 'Times New Roman', serif;}
+ .heding{
+    color: #16423C ;
+ }
+
+
+ 
+ .heading2{
+
+    color:#16423C  ;
+    
+      
+  }
+  
+  .product-card {
+      background-color:#16423C;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card__image {
+      height: 250px;
+      overflow: hidden;
+  }
+  
+  .product-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover .product-card__image img {
+      transform: scale(1.05);
+  }
+  
+  .product-card__info {
+      padding: 20px;
+      color:  #E9EFEC;
+  }
+  
+  .product-card__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color:#E9EFEC;
+  }
+  
+  .product-card__description {
+      font-size: 0.9rem;
+      color: #E9EFEC;
+      margin-bottom: 20px;
+  }
+  
+  .product-card__price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .product-card__price {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color:#16423C;
+      background-color:#16423C;
+  }
+  
+  .product-card__btn {
+      background-color:#E9EFEC;
+      color:#16423C;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s ease;
+  }
+  
+  .product-card__btn:hover {
+      background-color: #16423C;
+  }
+  
+  @media (max-width: 480px) {
+      .cont {
+          max-width: 100%;
+          padding: 0 20px;
+      }
+  
+      .product-card__image {
+          height: 150px;
+      }
+  
+      .product-card__title {
+          font-size: 1.3rem;
+      }
+  
+      .product-card__description {
+          font-size: 0.8rem;
+      }
+  
+      .product-card__price {
+          font-size: 1.1rem;
+      }
+  
+      .product-card__btn {
+          padding: 8px 16px;
+          font-size: 0.8rem;
+  
+  
+  }
+  }
+
+  
+
+
+
+  .wrapper {
+    width: 400px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .input-field {
+    position: relative;
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0;
+  }
+  .input-field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+  }
+  .input-field input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+  }
+  .input-field input:focus~label,
+  .input-field input:valid~label {
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+  }
+  .forget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 35px 0;
+    color: #fff;
+  }
+  #remember {
+    accent-color: #fff;
+  }
+  .forget label {
+    display: flex;
+    align-items: center;
+  }
+  .forget label p {
+    margin-left: 8px;
+  }
+  .wrapper a {
+    color: #efefef;
+    text-decoration: none;
+  }
+  .wrapper a:hover {
+    text-decoration: underline;
+  }
+  button {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+  }
+  button:hover {
+    color: #fff;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .register {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+  }
+  
+
+  .from-section{
+    background-color:#16423C;
+    color: #E9EFEC;
+    font-family: 'Times New Roman', serif;
+  }
+
+   .heding3{
+    color: #E9EFEC;
+   }
+
+
+
+
+
+   .box {
+    border-radius: 150px;
+    background : #16423C ;
+    position:relative;
+    overflow: hidden;
+    text-align:center;
+}
+.box:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 100%;
+    border-radius: 150px;
+    box-shadow: inset 0 0 25px #C4DAD2;
+    transition: all 0.3s ease;
+    background-image: linear-gradient(to right,  #16423C 0%,  #16423C 100%);
+}
+.box:hover:before {
+    width: 100%;
+}
+.box:hover .image-wrapper {
+    padding:0;
+}
+.box:hover .box-desc {
+    color:#fff;
+}
+.box:hover .social li a {
+    background:#fff;
+    background-image: none;
+    color:#000;
+}
+.box:hover .social li a:hover {
+    background:#6A9C89;
+    color:#fff;
+}
+.image-wrapper {
+    position: relative;
+    max-width: 210px;
+    max-height: 210px;
+    margin:0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 0.5s ease;
+    box-shadow: inset 0px 0px 20px #C4DAD2 ;
+}
+.image-wrapper img {
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+.box-desc {
+    position:relative;
+}
+ul.social {
+    padding:0;
+}
+ul.social li {
+    display:inline-block;
+    list-style-type:none;
+}
+ul.social li a {
+    position:relative;
+    width: 36px;
+    height: 25px;
+    background-image: linear-gradient(to right, #16423C 0%,  #16423C 100%);
+    display:inline-block;
+    line-height:36px;
+    border-radius:50%;
+    color:#fff;
+    transition: all .5s ease;
+}
+
+.heding4 {
+  color: #16423C;
+}
+
+.name{
+  color: whitesmoke;
+}
+
+.team-section{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #FBFBFB;
+}
+
+
+
+
+
+
+.clients{
+   font-family:  Arial, Helvetica, sans-serif;
+
+}
+</style>
+
+<!-- the and the contect section -->
+
+
+
+<section> 
+   <style>h1{ padding: 0 0 30px; }
+    .our-team{
+        overflow: hidden;
+        text-align: center;
+    }
+    .our-team .pic{
+        position: relative;
+        overflow:hidden;
+        border-radius: 50%;
+    }
+    .our-team .pic img{
+        width: 100%;
+        height: auto;
+    }
+    .our-team .over-layer{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:  #16423C ;
+        opacity:0;
+        transition: all 0.30s ease 0s;
+    }
+    .our-team:hover .over-layer{
+        opacity:1;
+    }
+    .our-team .social-link{
+        margin:0;
+        padding:0;
+        position:relative;
+        top:65%;
+        left:0;
+        list-style:none;
+        transition:all 0.50s ease 0s;
+    }
+    .our-team:hover .social-link{
+        top:45%;
+    }
+    .our-team .social-link li{
+        display: inline-block;
+        margin-right:5px;
+    }
+    .our-team .social-link li a{
+        width:50px;
+        height:50px;
+        color:rgb(138, 121, 156);
+        background:#fff;
+        font-size:22px;
+        line-height:50px;
+        border-radius:50%;
+        text-align: center;
+        transform: translateY(0px);
+        transition: all 0.40s linear 0s;
+    }
+    .our-team .social-link li a:hover{
+        transform: translateY(-13px);
+        text-decoration:none;
+    }
+    .our-team .social-link li a.fa-facebook:hover{
+        color:#5d82d1;
+    }
+    .our-team .social-link li a.fa-google:hover{
+        color:#eb5e4c;
+    }
+    .our-team .social-link li a.fa-twitter:hover{
+        color:#40bff5;
+    }
+    .our-team .team-content{
+        padding:12px 25px;
+    }
+    .our-team .post-title{
+        margin:0;
+        color:  #16423C ;
+        font-size:20px;
+        letter-spacing:1px;
+        text-transform:uppercase;
+    }
+    .our-team .post-title:after{
+        content: "";
+        border-bottom: 2px solid   #16423C ;
+        width: 15%;
+        display: block;
+        margin: 15px auto;
+    }
+    .our-team .post-title small{
+        display: block;
+        font-size:14px;
+        margin-top:10px;
+        letter-spacing:1px;
+        text-transform:uppercase;
+    }</style>
+  
+
+  <div class="container" id="Team">
+  <div class="row text-center">
+    <h3 class="ezy__testimonial21-heading mb-4 text-capitalize fw-bloder display-2  text-center "> <b>  Team  </b></h3>
+  </div>
+  <div class="row">
+      <div class="col-md-4 col-sm-6">
+          <div class="our-team">
+              <div class="pic">
+                  <img src="https://cdn.yahoobaba.net/our-team/demo23/images/img-1.jpg" alt="">
+                  <div class="over-layer">
+                      <ul class="social-link">
+                          <li><a href="#" class="fab fa-facebook"></a></li>
+                          <li><a href="#" class="fab fa-google"></a></li>
+                          <li><a href="#" class="fab fa-twitter"></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="team-content">
+                  <h3 class="post-title">Williamson<small>Web designer</small></h3>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+          <div class="our-team">
+              <div class="pic">
+                  <img src="https://cdn.yahoobaba.net/our-team/demo23/images/img-2.jpg" alt="">
+                  <div class="over-layer">
+                      <ul class="social-link">
+                          <li><a href="#" class="fab fa-facebook"></a></li>
+                          <li><a href="#" class="fab fa-google"></a></li>
+                          <li><a href="#" class="fab fa-twitter"></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="team-content">
+                  <h3 class="post-title">Kristiana<small>ui/ux desginer</small></h3>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+          <div class="our-team">
+              <div class="pic">
+                  <img src="https://cdn.yahoobaba.net/our-team/demo23/images/img-3.jpg" alt="">
+                  <div class="over-layer">
+                      <ul class="social-link">
+                          <li><a href="#" class="fab fa-facebook"></a></li>
+                          <li><a href="#" class="fab fa-google"></a></li>
+                          <li><a href="#" class="fab fa-twitter"></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="team-content">
+                  <h3 class="post-title">Steve Thomas<small>seo exports</small></h3>
+              </div>
+          </div>
+      </div>
+  </div>
+</div></section>
+<!-- teb id-1 -->
+
+<div id="clients">
+    <section class="ezy__testimonial21 light  mt-3">
+        <div class="container position-relative">
+          <div class="row justify-content-center mb-md-4">
+            <div class="col-8 col-lg-6 col-xl-5">
+              <h3 class="ezy__testimonial21-heading mb-4 text-capitalize fw-bloder display-2  text-center "> <b>  Clients  </b></h3>
+              <p class="ezy__testimonial21-sub-heading mb-0">
+                Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis
+                eligendi qui.
+              </p>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-12">
+              <div id="ezy__testimonial21-controls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner overflow-visible">
+                  <div class="carousel-item active">
+                    <div class="row mt-5">
+                      <div class="col-md-6 mt-4">
+                        <div class="ezy__testimonial21-item px-4 py-4">
+                          <div class="ezy__testimonial21-content mt-3">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                              <div class="d-flex align-items-center">
+                                <div class="me-2">
+                                  <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUNo-mkoj2Xj9uUKhxzRSlijz_JHIS7m9YTgDmEJYol-3Bxa_zyumkXAAWTNjnxCfHQZ4&usqp=CAU"
+                                    alt=""
+                                    class="img-fluid rounded-circle border"
+                                    width="47"
+                                  />
+                                </div>
+                                <div>
+                                  <h5 class="mb-0">hina Kumar</h5>
+                                </div>
+                              </div>
+                              <p class="mb-0 ezy__testimonial21-rating">
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star-half-alt active"></span>
+                                <span class="fas fa-star"></span>
+                              </p>
+                            </div>
+                            <p class="mb-4 ezy__testimonial21-text">
+                              When it comes to booking a holiday, we know everyone likes something different so we've
+                              designed our getaways with you in mind.crises have deve loped many times throughout history
+                              when one or more risks have emerge d for a banking sector as a whole.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-4">
+                        <div class="ezy__testimonial21-item px-4 py-4">
+                          <div class="ezy__testimonial21-content mt-3">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                              <div class="d-flex align-items-center">
+                                <div class="me-2">
+                                  <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUNo-mkoj2Xj9uUKhxzRSlijz_JHIS7m9YTgDmEJYol-3Bxa_zyumkXAAWTNjnxCfHQZ4&usqp=CAU"
+                                    alt=""
+                                    class="img-fluid rounded-circle border"
+                                    width="47"
+                                  />
+                                </div>
+                                <div>
+                                  <h5 class="mb-0">rahul Shen</h5>
+                                </div>
+                              </div>
+                              <p class="mb-0 ezy__testimonial21-rating">
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star-half-alt active"></span>
+                                <span class="fas fa-star"></span>
+                              </p>
+                            </div>
+                            <p class="mb-4 ezy__testimonial21-text">
+                              When it comes to booking a holiday, we know everyone likes something different so we've
+                              designed our getaways with you in mind.crises have deve loped many times throughout history
+                              when one or more risks have emerge d for a banking sector as a whole.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row mt-5">
+                      <div class="col-md-6 mt-4">
+                        <div class="ezy__testimonial21-item px-4 py-4">
+                          <div class="ezy__testimonial21-content mt-3">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                              <div class="d-flex align-items-center">
+                                <div class="me-2">
+                                  <img
+                                    src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg"
+                                    alt=""
+                                    class="img-fluid rounded-circle border"
+                                    width="47"
+                                  />
+                                </div>
+                                <div>
+                                  <h5 class="mb-0">Akshay Kumar</h5>
+                                </div>
+                              </div>
+                              <p class="mb-0 ezy__testimonial21-rating">
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star-half-alt active"></span>
+                                <span class="fas fa-star"></span>
+                              </p>
+                            </div>
+                            <p class="mb-4 ezy__testimonial21-text">
+                              When it comes to booking a holiday, we know everyone likes something different so we've
+                              designed our getaways with you in mind.crises have deve loped many times throughout history
+                              when one or more risks have emerge d for a banking sector as a whole.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-4">
+                        <div class="ezy__testimonial21-item px-4 py-4">
+                          <div class="ezy__testimonial21-content mt-3">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                              <div class="d-flex align-items-center">
+                                <div class="me-2">
+                                  <img
+                                    src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_2.jpeg"
+                                    alt=""
+                                    class="img-fluid rounded-circle border"
+                                    width="47"
+                                  />
+                                </div>
+                                <div>
+                                  <h5 class="mb-0">Raima Shen</h5>
+                                </div>
+                              </div>
+                              <p class="mb-0 ezy__testimonial21-rating">
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star-half-alt active"></span>
+                                <span class="fas fa-star"></span>
+                              </p>
+                            </div>
+                            <p class="mb-4 ezy__testimonial21-text">
+                              When it comes to booking a holiday, we know everyone likes something different so we've
+                              designed our getaways with you in mind.crises have deve loped many times throughout history
+                              when one or more risks have emerge d for a banking sector as a whole.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row mt-5">
+                      <div class="col-md-6 mt-4">
+                        <div class="ezy__testimonial21-item px-4 py-4">
+                          <div class="ezy__testimonial21-content mt-3">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                              <div class="d-flex align-items-center">
+                                <div class="me-2">
+                                  <img
+                                    src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg"
+                                    alt=""
+                                    class="img-fluid rounded-circle border"
+                                    width="47"
+                                  />
+                                </div>
+                                <div>
+                                  <h5 class="mb-0">Akshay Kumar</h5>
+                                </div>
+                              </div>
+                              <p class="mb-0 ezy__testimonial21-rating">
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star-half-alt active"></span>
+                                <span class="fas fa-star"></span>
+                              </p>
+                            </div>
+                            <p class="mb-4 ezy__testimonial21-text">
+                              When it comes to booking a holiday, we know everyone likes something different so we've
+                              designed our getaways with you in mind.crises have deve loped many times throughout history
+                              when one or more risks have emerge d for a banking sector as a whole.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-4">
+                        <div class="ezy__testimonial21-item px-4 py-4">
+                          <div class="ezy__testimonial21-content mt-3">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                              <div class="d-flex align-items-center">
+                                <div class="me-2">
+                                  <img
+                                    src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_2.jpeg"
+                                    alt=""
+                                    class="img-fluid rounded-circle border"
+                                    width="47"
+                                  />
+                                </div>
+                                <div>
+                                  <h5 class="mb-0">Raima Shen</h5>
+                                </div>
+                              </div>
+                              <p class="mb-0 ezy__testimonial21-rating">
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star active"></span>
+                                <span class="fas fa-star-half-alt active"></span>
+                                <span class="fas fa-star"></span>
+                              </p>
+                            </div>
+                            <p class="mb-4 ezy__testimonial21-text">
+                              When it comes to booking a holiday, we know everyone likes something different so we've
+                              designed our getaways with you in mind.crises have deve loped many times throughout history
+                              when one or more risks have emerge d for a banking sector as a whole.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="position-relative d-flex justify-content-center align-items-center my-5">
+            <button
+              class="carousel-control-prev me-4"
+              type="button"
+              data-bs-target="#ezy__testimonial21-controls"
+              data-bs-slide="prev"
+            >
+              <i class="fas fa-angle-left"></i>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#ezy__testimonial21-controls"
+              data-bs-slide="next"
+            >
+              <i class="fas fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <style>
+        .ezy__testimonial21 {
+        
+            
+            /* Bootstrap variables */
+            --bs-body-color:  #16423C;
+            --bs-body-bg: rgb(255, 255, 255);
+          
+            /* Easy Frontend variables */
+            --ezy-theme-color: rgb(13, 110, 253);
+            --ezy-theme-color-rgb: 13, 110, 253;
+            --ezy-rating-rgb: 255, 215, 0;
+            --ezy-item-bg: #ffffff;
+            --ezy-item-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+            --ezy-arrow-shadow: -8px 25px 40px 0 rgba(0, 0, 0, 0.2);
+          
+            background-color: var(--bs-body-bg);
+            color: var(--bs-body-color);
+            overflow: hidden;
+            padding: 60px 0;
+          }
+          
+          @media (min-width: 768px) {
+            .ezy__testimonial21 {
+              padding: 100px 0;
+            }
+          }
+          
+          /* Gray Block Style */
+          .gray .ezy__testimonial21,
+          .ezy__testimonial21.gray {
+            /* Bootstrap variables */
+            --bs-body-bg: rgb(246, 246, 246);
+          
+            /* Easy Frontend variables */
+            --ezy-item-bg: #fff;
+          }
+          
+          /* Dark Gray Block Style */
+          .dark-gray .ezy__testimonial21,
+          .ezy__testimonial21.dark-gray {
+            /* Bootstrap variables */
+            --bs-body-color: #ffffff;
+            --bs-body-bg: rgb(30, 39, 53);
+          
+            /* Easy Frontend variables */
+            --ezy-item-bg: rgb(11, 23, 39);
+            --ezy-item-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+          }
+          
+          /* Dark Block Style */
+          .dark .ezy__testimonial21,
+          .ezy__testimonial21.dark {
+            /* Bootstrap variables */
+            --bs-body-color: #ffffff;
+            --bs-body-bg: rgb(11, 23, 39);
+          
+            /* Easy Frontend variables */
+            --ezy-item-bg: rgb(30, 39, 53);
+            --ezy-item-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+          }
+          
+          .ezy__testimonial21-heading {
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 25px;
+          }
+          
+          @media (min-width: 768px) {
+            .ezy__testimonial21-heading {
+              font-size: 45px;
+              line-height: 45px;
+            }
+          }
+          
+          .ezy__testimonial21-sub-heading {
+            font-size: 18px;
+            line-height: 1.6;
+            opacity: 0.8;
+          }
+          
+          .ezy__testimonial21-item {
+            background-color: #16423C;
+            box-shadow: var(--ezy-item-shadow);
+            border-radius: 15px;
+            transition: transform 0.25s ease-in-out;
+          }
+          
+          .ezy__testimonial21-item:hover {
+            transform: translateY(-5px);
+          }
+          
+          .ezy__testimonial21-item > img {
+            border-radius: 15px;
+            margin-top: -85px;
+          }
+          
+          .ezy__testimonial21-content * {
+            color: white;
+          }
+          
+          .ezy__testimonial21-social-links a {
+            display: inline-block;
+            opacity: 0.6;
+            transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out, color 0.25s ease-in-out;
+          }
+          
+          .ezy__testimonial21-social-links a:hover {
+            transform: translateY(5px);
+            color: var(--bs-body-color);
+            opacity: 1;
+          }
+          
+          .ezy__testimonial21-rating [class*="fa-"]:not(.active),
+          .ezy__testimonial21-rating [class*="fa-"]:not(.active) * {
+            font-size: 22px;
+            color: rgba(var(--ezy-rating-rgb), 0.2);
+          }
+          
+          .ezy__testimonial21-rating [class*="fa-"].active,
+          .ezy__testimonial21-rating [class*="fa-"].active * {
+            font-size: 22px;
+            color: rgba(var(--ezy-rating-rgb), 1);
+          }
+          
+          .ezy__testimonial21 .carousel-control-prev,
+          .ezy__testimonial21 .carousel-control-next {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            font-size: 22px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: var(--ezy-arrow-shadow);
+            color: var(--bs-body-color);
+          }
+          
+          .ezy__testimonial21 .carousel-control-prev:hover,
+          .ezy__testimonial21 .carousel-control-next:hover {
+            color: var(--bs-body-color) !important;
+          }
+          
+          .ezy__testimonial21-text {
+            line-height: 1.8;
+            opacity: 0.8;
+          }
+        </style>
+
+
+
+  
+</div>
+
+<div id="blog">
+    <section class="ezy__blog2  ">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="ezy__blog2-heading mb-3 mt-0 display-2 h2 text-capitalize"><b> letest blog</b></h2>
+              <p class="ezy__blog2-sub-heading px-lg-5 mb-4">
+        
+              </p>
+              
+            </div>
+          </div>
+          <div class="row mt-3 mt-md-5">
+            <div class="col-12 col-md-6 col-lg-4 mt-4">
+              <article class="ezy__blog2-post rounded overflow-hidden h-100">
+                <img src="https://plus.unsplash.com/premium_photo-1661329813358-56bcd578b9b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHV4JTIwZGVzaWdufGVufDB8fDB8fHww" alt="" class="img-fluid w-100" />
+                <div class="p-3 p-md-4">
+                  <h4 class="ezy__blog2-title fs-4 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, velit.</h4>
+                  <p class="ezy__blog2-author">
+                    <span class="me-2">By <a href="" class="text-decoration-none">John Leo</a></span>
+                    <span>At <span>21 Jun, 2024</span></span>
+                  </p>
+                  <p class="ezy__blog2-description mt-3 mb-4">
+                    Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores.
+                  </p>
+                  <a href="" class="border-dark  btn blog__btn">Read More</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-4">
+              <article class="ezy__blog2-post rounded overflow-hidden h-100">
+                <img src="https://plus.unsplash.com/premium_photo-1661677942925-b6ad7b27af18?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="img-fluid w-100" />
+                <div class="p-3 p-md-4">
+                  <h4 class="ezy__blog2-title fs-4 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, velit</h4>
+                  <p class="ezy__blog2-author">
+                    <span class="me-2">By <a href="" class="text-decoration-none">Abraham Frin</a></span>
+                    <span>At <span>21 Jun, 2024</span></span>
+                  </p>
+                  <p class="ezy__blog2-description mt-3 mb-4">
+                    It’s no secret that the digital industry is booming. From exciting startups to global brands.
+                  </p>
+                  <a href="" class="border-dark  btn blog__btn">Read More</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-4">
+              <article class="ezy__blog2-post rounded overflow-hidden h-100">
+                <img src="https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGlnaXRhbCUyMG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="" class="img-fluid w-100" />
+                <div class="p-3 p-md-4">
+                  <h4 class="ezy__blog2-title fs-4 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, velit</h4>
+                  <p class="ezy__blog2-author">
+                    <span class="me-2">By <a href="" class="text-decoration-none">Finn Alen</a></span>
+                    <span>At <span>21 Jun, 2024</span></span>
+                  </p>
+                  <p class="ezy__blog2-description mt-3 mb-4">
+                    Viverra tellus in hac habitasse platea dictumst. Sollicitudin tempor id eu nisl.
+                  </p>
+                  <a href="" class="border-dark  btn blog__btn">Read More</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-4">
+              <article class="ezy__blog2-post rounded overflow-hidden h-100">
+                <img src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg" alt="" class="img-fluid w-100" />
+                <div class="p-3 p-md-4">
+                  <h4 class="ezy__blog2-title fs-4 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, velit</h4>
+                  <p class="ezy__blog2-author">
+                    <span class="me-2">By <a href="" class="text-decoration-none">Warner Mac</a></span>
+                    <span>At <span>21 Jun, 2024</span></span>
+                  </p>
+                  <p class="ezy__blog2-description mt-3 mb-4">
+                    Sed ut in perspiciatis unde omnis iste natus error sit tatem doloremque laudantium.
+                  </p>
+                  <a href="" class="border-dark  btn blog__btn">Read More</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-4">
+              <article class="ezy__blog2-post rounded overflow-hidden h-100">
+                <img src="https://plus.unsplash.com/premium_photo-1678566153919-86c4ba4216f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGVzaWdufGVufDB8fDB8fHww" alt="" class="img-fluid w-100" />
+                <div class="p-3 p-md-4">
+                  <h4 class="ezy__blog2-title fs-4 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, velit</h4>
+                  <p class="ezy__blog2-author">
+                    <span class="me-2">By <a href="" class="text-decoration-none">Maxy Paulo</a></span>
+                    <span>At <span>21 Jun, 2024</span></span>
+                  </p>
+                  <p class="ezy__blog2-description mt-3 mb-4">
+                    More off this less hello salamander lied porpoise much over tightly circa horse taped.
+                  </p>
+                  <a href="" class="border-dark  btn blog__btn">Read More</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-4">
+              <article class="ezy__blog2-post rounded overflow-hidden h-100">
+                <img src="https://t4.ftcdn.net/jpg/02/52/76/09/360_F_252760983_ZTCURKreID1WJkC7uiX6olt7hH0Q7v8X.jpg" alt="" class="img-fluid w-100" />
+                <div class="p-3 p-md-4">
+                  <h4 class="ezy__blog2-title fs-4 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, velit</h4>
+                  <p class="ezy__blog2-author">
+                    <span class="me-2">By <a href="" class="text-decoration-none">Sarah Taylor</a></span>
+                    <span>At <span>21 Jun, 2024</span></span>
+                  </p>
+                  <p class="ezy__blog2-description mt-3 mb-4">
+                    Urna molestie at eleme ntum eu facilisis sed odio Male suada fames .
+                  </p>
+                  <a href="" class="  border-dark  btn blog__btn">Read More</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+
+
+      .ezy__blog2 
+      
+      
+    
+
+
+
+      
+   
+   {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: #fff;
+      
+        /* easy frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0 25px 41px rgba(89, 88, 109, 0.15);
+      
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+        color: var(--bs-body-color);
+      }
+      
+      @media (min-width: 768px) {
+        .ezy__blog2 {
+          padding: 100px 0;
+        }
+      }
+      
+      /* Gray Block Style */
+      .gray .ezy__blog2,
+      .ezy__blog2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      
+        /* easy frontend variables */
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0px 8px 44px rgba(182, 198, 222, 0.48);
+      }
+      
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__blog2,
+      .ezy__blog2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(241, 241, 241);
+        --bs-body-bg: rgb(30, 39, 53);
+      
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(11, 23, 39);
+        --ezy-card-shadow: none;
+      }
+      
+      /* Dark Block Style */
+      .dark .ezy__blog2,
+      .ezy__blog2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(255, 255, 255);
+        --bs-body-bg: rgb(11, 23, 39);
+      
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: none;
+      }
+      
+      /* heading and sub-heading */
+      .ezy__blog2-heading {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1;
+        color: var(--bs-body-color);
+        
+      }
+      
+      .ezy__blog2-sub-heading {
+        color: var(--bs-body-color);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        opacity: 0.8;
+      }
+      
+      @media (min-width: 991px) {
+        .ezy__blog2-heading {
+          font-size: 45px;
+        }
+      }
+      
+      .ezy__blog2-post {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+      }
+      
+      .ezy__blog2-title {
+        font-weight: 500;
+        margin-top: 0 !important;
+        color: var(--bs-body-color);
+      }
+      
+      .ezy__blog2-description {
+        color: var(--bs-body-color);
+        opacity: 0.6;
+      }
+      
+      .ezy__blog2-btn {
+        padding: 12px 30px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+      
+      .ezy__blog2-btn:hover {
+        color: #ffffff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+      
+      .ezy__blog2-btn-read-more {
+        padding: 7px 20px;
+        color: var(--bs-body-color);
+        border-color: var(--ezy-theme-color);
+      }
+      
+      .ezy__blog2-btn-read-more:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #ffffff;
+      }
+      
+      .ezy__blog2-author a {
+        color: var(--ezy-theme-color);
+        opacity: 0.7;
+      }
+
+       .blog__btn:hover{
+        background-color: #16423C;
+        color: white;
+       }
+      </style> 
+</div>
+
+
+<section class="ezy__footer3 ">
+    <div class="container">
+      <div class="row text-center text-sm-start mb-md-5">
+        <div class="col-lg-3">
+          <h2 class="fw-bold">Online E-learing</h2>
+        </div>
+        <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+          <h5>Quick Links</h5>
+          <ul class="nav flex-column ezy__footer3-quick-links">
+            <li>
+              <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Home</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> About Us</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Services</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+          <h5>Social Media</h5>
+          <ul class="nav flex-column ezy__footer3-quick-links">
+            <li>
+              <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Facebook</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Instagram</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> LinkedIn</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+          <h5>Job Info</h5>
+          <ul class="nav flex-column ezy__footer3-quick-links">
+            <li>
+              <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Select</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Service</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Payment</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 mt-4 mt-lg-0">
+          <h5>Contact Us</h5>
+          <ul class="nav flex-column ezy__footer3-quick-links">
+            <li>Sylhet, india</li>
+            <li>
+              <a href="#"><span class="fas fa-envelope me-2 small opacity-50"></span> E learing.com</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-phone me-2 small opacity-50"></span> + 99 880 85893-05390</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="row d-flex justify-content-between align-items-center text-center text-lg-start">
+        <div class="col-md-6">
+          <p class="mb-0 mt-1">Copyright &copy; E-lerning.com, All rights reserved</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="ezy__footer3-nav nav justify-content-center justify-content-md-end mt-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  .ezy__footer3 {
+    /* Bootstrap variables */
+    --bs-body-color:  rgb(246, 246, 246);
+    --bs-body-bg:  #16423C ;
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+  
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    padding: 60px 0;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__footer3 {
+      padding: 80px 0;
+    }
+  }
+  
+  /* Gray Block Style */
+  .gray .ezy__footer3,
+  .ezy__footer3.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__footer3,
+  .ezy__footer3.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+  }
+  
+  .dark .ezy__footer3,
+  .ezy__footer3.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+  
+    /* Easy Frontend variables */
+  }
+  
+  .ezy__footer3-nav .nav-link {
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__footer3-nav .nav-link:hover {
+    color: var(--bs-body-color);
+    opacity: 0.8;
+  }
+  
+  .ezy__footer3-quick-links li {
+    margin-bottom: 8px;
+  }
+  
+  .ezy__footer3-quick-links li a {
+    color: var(--bs-body-color);
+    opacity: 0.7;
+    text-decoration: none;
+  }
+  
+  .ezy__footer3-quick-links li a:hover {
+    color: var(--bs-body-color);
+    opacity: 1;
+  }
+  </style>
+
+</body>
+</html>
